@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "api": 4,
+  "id": "epictv-pluginapp",
+  "name": "EpicTVPlugin",
+  "version": "1.0.1",
+  "entry": "plugin.js",
+  "hosts": [
+    "playlatam.site",
+    "api.entrada-sur.workers.dev"
+  ],
+  "capabilities": [
+    "home",
+    "search",
+    "browse",
+    "episodes",
+    "details",
+    "resolve",
+    "channels",
+    "events"
+  ],
+  "browser": true,
+  "fetchHosts": "any",
+  "streamHosts": "any",
+  "liveStreamHosts": "any",
+  "telemetry": false,
+  "settings": [
+    {
+      "key": "connection",
+      "label": "Conexión",
+      "type": "section"
+    },
+    {
+      "key": "apiKey",
+      "label": "Clave de acceso",
+      "type": "password",
+      "hint": "Clave de acceso facilitada por tu proveedor."
+    },
+    {
+      "key": "country",
+      "label": "País",
+      "type": "text",
+      "hint": "Opcional. Código de dos letras, como CO o MX. Vacío: región del servicio."
+    },
+    {
+      "key": "status",
+      "label": "Estado de conexión",
+      "type": "status"
+    },
+    {
+      "key": "reconnect",
+      "label": "Reconectar",
+      "type": "action",
+      "confirm": "¿Volver a conectar esta instalación?"
+    }
+  ]
+}
